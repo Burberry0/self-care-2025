@@ -956,23 +956,23 @@ struct IntroQuestionnaireView: View {
         .padding()
     }
     
-    private func completeQuestionnaire() {
-        // Convert TimeOfDay to TimeRange
-        let timeRange: TimeRange
-        switch preferredTime {
+    private func timeOfDayToTimeRange(_ timeOfDay: TimeOfDay) -> TimeRange {
+        switch timeOfDay {
         case .morning:
-            timeRange = .morning
+            return .morning
         case .afternoon:
-            timeRange = .afternoon
+            return .afternoon
         case .evening:
-            timeRange = .evening
+            return .evening
         case .beforeBed:
-            timeRange = .evening // Map before bed to evening
+            return .evening // Map beforeBed to evening since TimeRange doesn't have a beforeBed option
         }
-        
+    }
+
+    private func completeQuestionnaire() {
         // Create user preferences from questionnaire data
         let preferences = UserPreferences(
-            preferredActivityTimes: [timeRange: []],
+            preferredActivityTimes: [timeOfDayToTimeRange(preferredTime): []],
             activityEngagement: Dictionary(uniqueKeysWithValues: selectedActivities.map { ($0.rawValue, 0.0) }),
             moodBaseline: 0.0,
             notificationPreferences: UserPreferences.NotificationPreferences(

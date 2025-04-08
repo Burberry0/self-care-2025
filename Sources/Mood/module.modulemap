@@ -1,1 +1,0 @@
-module Mood { header "Mood.h" export * }

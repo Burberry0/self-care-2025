@@ -23,14 +23,10 @@
     <key>UIApplicationSceneManifest</key>
     <dict>
         <key>UIApplicationSupportsMultipleScenes</key>
-        <false/>
+        <true/>
     </dict>
     <key>UILaunchScreen</key>
     <dict/>
-    <key>UIRequiredDeviceCapabilities</key>
-    <array>
-        <string>armv7</string>
-    </array>
     <key>UISupportedInterfaceOrientations</key>
     <array>
         <string>UIInterfaceOrientationPortrait</string>
@@ -45,16 +41,21 @@
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>SelfCare uses your location to provide insights about your daily routine and suggest personalized self-care activities based on your location patterns.</string>
+    <string>We use your location to track your activity patterns and provide personalized recommendations.</string>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>SelfCare uses your location to provide insights about your daily routine and suggest personalized self-care activities based on your location patterns.</string>
+    <string>We use your location to track your activity patterns while using the app.</string>
     <key>NSLocationAlwaysUsageDescription</key>
-    <string>SelfCare uses your location to provide insights about your daily routine and suggest personalized self-care activities based on your location patterns.</string>
+    <string>We use your location to track your activity patterns and provide personalized recommendations.</string>
     <key>NSLocationUsageDescription</key>
-    <string>SelfCare uses your location to provide insights about your daily routine and suggest personalized self-care activities based on your location patterns.</string>
+    <string>We use your location to track your activity patterns and provide personalized recommendations.</string>
     <key>NSMotionUsageDescription</key>
-    <string>SelfCare uses motion data to track your activity levels and provide personalized recommendations.</string>
+    <string>We use motion and fitness tracking to monitor your physical activity and provide better health insights.</string>
     <key>NSUserTrackingUsageDescription</key>
-    <string>SelfCare uses tracking to provide personalized recommendations and insights about your daily habits.</string>
+    <string>We use tracking to provide personalized recommendations and insights about your daily habits.</string>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>location</string>
+        <string>processing</string>
+    </array>
 </dict>
 </plist> 

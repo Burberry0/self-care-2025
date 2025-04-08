@@ -29,48 +29,6 @@
 		4BF89A4A2D9C8A0400CF2722 /* selfcareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfcareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		4BF89A352D9C8A0300CF2722 /* selfcare */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = selfcare;
-			sourceTree = "<group>";
-		};
-		4BF89A432D9C8A0400CF2722 /* selfcareTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = selfcareTests;
-			sourceTree = "<group>";
-		};
-		4BF89A4D2D9C8A0400CF2722 /* selfcareUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = selfcareUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		4BF89A302D9C8A0300CF2722 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BF89A3D2D9C8A0400CF2722 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BF89A472D9C8A0400CF2722 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
 		4BF89A2A2D9C8A0300CF2722 = {
 			isa = PBXGroup;
@@ -92,6 +50,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4BF89A352D9C8A0300CF2722 /* selfcare */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = selfcare;
+			sourceTree = "<group>";
+		};
+		4BF89A432D9C8A0400CF2722 /* selfcareTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = selfcareTests;
+			sourceTree = "<group>";
+		};
+		4BF89A4D2D9C8A0400CF2722 /* selfcareUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = selfcareUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,19 +79,13 @@
 			buildConfigurationList = 4BF89A542D9C8A0400CF2722 /* Build configuration list for PBXNativeTarget "selfcare" */;
 			buildPhases = (
 				4BF89A2F2D9C8A0300CF2722 /* Sources */,
-				4BF89A302D9C8A0300CF2722 /* Frameworks */,
 				4BF89A312D9C8A0300CF2722 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				4BF89A352D9C8A0300CF2722 /* selfcare */,
-			);
 			name = selfcare;
-			packageProductDependencies = (
-			);
 			productName = selfcare;
 			productReference = 4BF89A332D9C8A0300CF2722 /* selfcare.app */;
 			productType = "com.apple.product-type.application";
@@ -122,16 +95,12 @@
 			buildConfigurationList = 4BF89A572D9C8A0400CF2722 /* Build configuration list for PBXNativeTarget "selfcareTests" */;
 			buildPhases = (
 				4BF89A3C2D9C8A0400CF2722 /* Sources */,
-				4BF89A3D2D9C8A0400CF2722 /* Frameworks */,
 				4BF89A3E2D9C8A0400CF2722 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4BF89A422D9C8A0400CF2722 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4BF89A432D9C8A0400CF2722 /* selfcareTests */,
 			);
 			name = selfcareTests;
 			packageProductDependencies = (
@@ -145,16 +114,12 @@
 			buildConfigurationList = 4BF89A5A2D9C8A0400CF2722 /* Build configuration list for PBXNativeTarget "selfcareUITests" */;
 			buildPhases = (
 				4BF89A462D9C8A0400CF2722 /* Sources */,
-				4BF89A472D9C8A0400CF2722 /* Frameworks */,
 				4BF89A482D9C8A0400CF2722 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4BF89A4C2D9C8A0400CF2722 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4BF89A4D2D9C8A0400CF2722 /* selfcareUITests */,
 			);
 			name = selfcareUITests;
 			packageProductDependencies = (
@@ -403,11 +368,14 @@
 				DEVELOPMENT_TEAM = MAPR468W79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Self Care";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,11 +399,14 @@
 				DEVELOPMENT_TEAM = MAPR468W79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Self Care";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

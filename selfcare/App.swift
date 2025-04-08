@@ -1,13 +1,4 @@
 import SwiftUI
-import SelfCareKit
-
-// Core
-import Core.AppState
-
-// Stores
-import Habits.HabitStore
-import Mood.MoodStore
-import Recommendations.RecommendationStore
 
 @main
 struct SelfCareApp: App {

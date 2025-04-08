@@ -1,12 +1,4 @@
 import SwiftUI
-import Charts
-
-// Core
-import Core.AppState
-
-// Stores
-import Habits.HabitStore
-import User.PersonalizationStore
 
 struct HabitsView: View {
     @EnvironmentObject private var habitStore: HabitStore

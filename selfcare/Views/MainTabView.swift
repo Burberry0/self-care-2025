@@ -1,5 +1,4 @@
 import SwiftUI
-import Charts
 
 struct MainTabView: View {
     @EnvironmentObject var appState: AppState
